@@ -7,10 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>David Caye Imaging</title>
+   
+    <title>Services</title>
   </head>
-  <body>
+  <body id ="services-body">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a id = "navbrand" class="navbar-brand" href="#"><img class ="rounded-circle" src = "images/main-logo-grey.jpg" width = "150"></img></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,11 +71,208 @@
         </div>        
       </div>
     </div>
+    <div id ="services-container">
+      <div id = "ct_acq" class="container">
+        <div class="row" style="margin-bottom:50px; text-align: center">
+          <div class="col-md-8">
+            <h1> CT Acquisition</h1>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas, cumque libero obcaecati in harum! Cumque nostrum possimus alias laboriosam non distinctio, suscipit, nobis vero ab id excepturi similique autem.</p>
+            <button style="border:black 1px solid" type="button" id = "CT_acq_full_btn" class="btn btn-default" onclick="showDiv('CT_acq_full')">Show More</button>
+            <div id ="CT_acq_full" style="display:none; text-align: left">
+              <ul>
+                <li><p>Adequate knowledge of ALARA principle...</p></li>
+                <li><p>Protocols(Siemens-GE-Canon/Toshiba-Phillips) adapted to available CT
+                    technique with reliable enhancement of iodine contrast medium (CM).</p></li>
+                <li><p>Ensuring sufficient image quality while minimizing radiation exposure.</p></li>
+                <li><p>Anatomical and Functional valve protocols along with myocardial perfusion
+                    (CTP).</p></li>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h1> CT Acquisition</h1>
+                <li><p>Pathways for manual adjustment of tube potential according to patient size
+                    based on weight or body mass index or using the automatic adjustment
+                    software provided by vendor.</p></li>
+                <li><p>Utilizing low tube voltage with its friend Iterative reconstruction (IR).</p></li>
+                <li><p>Lower tube potential and adequate “contrast to noise ratio” (intra-arterial
+                    opacification >250 HU.</p></li>
+                <li><p>Proper pacemaker set up prior to scan acquisition.</p></li>
+              </ul>              
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="images/scans/cardiac 2.png"></img>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="row" style="margin-bottom:50px">
+          <div class="col-md-4">
+            <img class="img-fluid" src="images/scans/cardiac 2.png"></img>
+          </div>
+          <div class="col-md-8">
+            <h1> 3 Dimensional CT Sizing </h1>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas, cumque libero obcaecati in harum! Cumque nostrum possimus alias laboriosam non distinctio, suscipit, nobis vero ab id excepturi similique autem.</p>
+            <button style="border:black 1px solid" type="button" id = "3D_sizing_full_btn" class="btn btn-default" onclick="showDiv('3D_sizing_full')">Show More</button>
+            <div id ="3D_sizing_full" style="display:none;">
+            <ul>
+              <li><p>Consistency with proven techniques for Trans-Catheter Therapy planning involving Aortic, Tricuspid, Mitral and Pulmonic valves.</p></li>
+              <li><p>Peripheral access interrogation techniques for Transcatheter deployment.</p></li>
+              <li><p>Paravalvular leak assessment and planning techniques for treatment.</p></li>
+              <li><p>Efficient Image post-processing performed on Vital Images, 3Mensio, Circle,
+                  TeraRecon, GE AW, Zylosoft and Siemens Syngo via workstations.</p></li>
+            </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id ="contrast" class="container">
+        <div class="row" style="margin-bottom:50px">
+          <div class="col-md-8">
+            <h1> Contrast Enhancement</h1>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas, cumque libero obcaecati in harum! Cumque nostrum possimus alias laboriosam non distinctio, suscipit, nobis vero ab id excepturi similique autem.</p>
+            <button style="border:black 1px solid" type="button" id = "contrast_full_btn" class="btn btn-default" onclick="showDiv('contrast_full')">Show More</button>
+            <div id ="contrast_full" style="display:none;">
+            <ul>
+              <li><p>High flow high-pressure protocols.</p></li>
+              <li><p>Personalized adaptation of Contrast protocols with sophisticated scan
+                  timing techniques.</p></li>
+              <li><p>Vein to Aorta travel time: Precise scan-timing for optimal opacification for Siemens-Toshiba/Cannon-GE-Phillips scanners, Bolus tracking and test bolus approach options.</p></li>
+              <li><p>Satisfactory aortic blood pool attenuation regardless of vendor.</p></li>
+              <li><p>Triphasic injection protocols that allows accurate and reproducible
+                  assessment of the RV volumes, anatomic structures, cardiac disease, and right ventricular function. Tailored injection protocols like these for patients not suitable for MRI or echocardiography.</p></li>
+              <li><p>Contrast Induced Nephropathy (CIN) and the importance of judicious use of IV contrast.</p></li>
+              <li><p>Contrast medium: injection based on patient-related (body size and cardiac output), scanner-related and CM-related factors.</p></li>
+              <li><p>Contrast volumes based on injection rate and scan durations</p></li>
+              <li><p><strong>Pediatric​ </strong>injection rates for all morphologic procedures to patient size and
+                  IV gauge.</p></li>
+              <li><p>Biphasic or tri-phasic injection protocols.</p></li>
+              <li><p>Bolus Tracking implies semi-automated scan triggering.
+                  ADVANTAGES-potential to reduce the overall contrast dose by eliminating
+                  the test bolus, however it does add complexity to the scan protocol.</p></li>
+              <li><p>Test Bolus technique consists of a small test bolus of contrast followed by a
+                  saline bolus, enhancement curve is generated to determine the contrast transit time to peak enhancement in the coronary arteries. ADVANTAGES-opportunity to acquaint the patient with the breath hold commands and the sensation of contrast injection.</p></li>
+            </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid"src="images/scans/cardiac 2.png"></img>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="margin-bottom:50px">
+          <div class="col-md-4">
+            <img class="img-fluid"src="images/scans/cardiac 2.png"></img>
+          </div>
+          <div class="col-md-8">
+              <h1> Nursing and Patient Protocols Contrast Allergy Prep </h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas, cumque libero obcaecati in harum! Cumque nostrum possimus alias laboriosam non distinctio, suscipit, nobis vero ab id excepturi similique autem.</p>
+              <button style="border:black 1px solid" type="button" id = "allergy_full_btn" class="btn btn-default" onclick="showDiv('allergy_full')">Show More</button>
+              <div id ="allergy_full" style="display:none;">
+              <ul>
+                <li><p>Contrast allergy prep inpatient and outpatient.</p></li>
+                <li><p>Renal insufficiency protocols to acquire scan.</p></li>
+                <li><p>Medical history inventory to be aware of including BP, Cardiomyopathy,
+                    Asthma, Pulmonary Hypertension and so on.</p></li>
+                <li><p>Absolute contraindications.</p></li>
+                <li><p>Beta Blockade and Nitroglycerin protocols before and during the procedure.</p></li>
+                <li><p>Discharge criteria</p></li>
+                <li><p>CIN contrast induced nephropathy</p></li>
+                <li><p>ACR and ACC guidelines for the management of contrast reactions.</p></li>
+              </ul>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="margin-bottom:50px">
+            <div class="col-md-8">
+              <h1> Pediatric CT Acquisition </h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas, cumque libero obcaecati in harum! Cumque nostrum possimus alias laboriosam non distinctio, suscipit, nobis vero ab id excepturi similique autem.</p>
+              <button style="border:black 1px solid" type="button" id = "p_ct_acq_full_btn" class="btn btn-default" onclick="showDiv('p_ct_acq_full')">Show More</button>
+              <div id ="p_ct_acq_full" style="display:none;">
+              <ul>
+                <li><p>Tested Cardiac CT Protocols for congenital heart disease(CHD) including Tetralogy of Fallot, Single Ventricle, Transposition Complexes, Aortic Arch Abnormalities-Rings/Slings, Coronary Anomalies</p></li>
+                <li><p>Decreasing diagnostic risk while maintaining diagnostic accuracy.</p></li>
+                <li><p>Age and size based modifications for patient preparation and image
+                    acquisition.</p></li>
+              </ul>
+  
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid"src="images/scans/cardiac 2.png"></img>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="margin-bottom:50px">
+          <div class="col-md-4">
+            <img class="img-fluid"src="images/scans/cardiac 2.png"></img>
+          </div> 
+          <div class="col-md-8">
+              <h1> Guided Accreditation recommendations </h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas, cumque libero obcaecati in harum! Cumque nostrum possimus alias laboriosam non distinctio, suscipit, nobis vero ab id excepturi similique autem.</p>
+              <button style="border:black 1px solid" type="button" id = "ga_full_btn" class="btn btn-default" onclick="showDiv('ga_full')">Show More</button>
+              <div id ="ga_full" style="display:none;">
+              <ul>
+                <li><p>Intersocietal Commission for the Accreditation of Computed Tomography Laboratories-(ICACTL).</p></li>
+                <li><p>American College of Radiology (ACR)</p></li>
+              </ul>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style="margin-bottom:50px">
+            <div class="col-md-8">
+              <h1> Dual Head and Single Head Injector Protocols </h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas, cumque libero obcaecati in harum! Cumque nostrum possimus alias laboriosam non distinctio, suscipit, nobis vero ab id excepturi similique autem.</p>
+              <button style="border:black 1px solid" type="button" id = "inj_full_btn" class="btn btn-default" onclick="showDiv('inj_full')">Show More</button>
+              <div id ="inj_full" style="display:none;">
+              <ul>
+                <li><p>Biphasic or Triphasic injection protocols with high injection rates (4-8 cc/sec).</p></li>
+                <li><p>Injection protocols that target right or left side, or both.</p></li>
+              </ul>
+  
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid"src="images/scans/cardiac 2.png"></img>
+          </div>
+        </div>
+      </div>
+        <div class="container">
+          <div class="row" style="margin-bottom:50px">
+            <div class="col-md-4">
+              <img class="img-fluid"src="images/scans/cardiac 2.png"></img>
+            </div>
+            <div class="col-md-8">
+              <h1> Proven Patient Education and Positioning</h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas, cumque libero obcaecati in harum! Cumque nostrum possimus alias laboriosam non distinctio, suscipit, nobis vero ab id excepturi similique autem.</p>
+              <button style="border:black 1px solid" type="button" id = "pos_full_btn" class="btn btn-default" onclick="showDiv('pos_full')">Show More</button>
+              <div id ="pos_full" style="display:none;">
+              <ul>
+                <li><p>Electrode positioning.</p></li>
+                <li><p>Breath-hold training.</p></li>
+                <li><p>Ideal patient positioning and electrocardiographic (ECG) lead placement.</p></li>
+                <li><p>Recommendation for appropriately equipped facility and staffed to manage
+                    contrast reactions, including anaphylaxis.</p></li>
+              </ul>
+  
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -80,78 +280,109 @@
 
     <footer class="page-footer font-small blue pt-4">
 
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-  
-      <!-- Grid row -->
-      <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mt-md-0 mt-3">
-  
-          <!-- Content -->
-          <h3 id ="footer-title">CorTactics</h3>
-          <p>A company designed to provide training and protocols that will elevate your Cardiovascular CT program to it's full potential</p>
-          <img src ="images/main-logo-grey.jpg" width="300"></img>  
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h3 id ="footer-title">CorTactics</h3>
+              <p>A company designed to provide training and protocols that will elevate your Cardiovascular CT program to it's full potential</p>
+              <img src ="images/main-logo-grey.jpg" width="300"></img>  
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Quick Links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">About us</a>
+                </li>
+                <li>
+                  <a href="#!">Services</a>
+                </li>
+                <li>
+                  <a href="#!">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#!">Contact</a>
+                </li>
+              </ul>
+      
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Services</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">CT Acquisition</a>
+                </li>
+                <li>
+                  <a href="#!">3 Dimensional CT Sizing</a>
+                </li>
+                <li>
+                  <a href="#!">Pediatric CT Acquisition</a>
+                </li>
+                <li>
+                  <a href="#!">Guided Accreditation recommendations</a>
+                </li>
+              </ul>  
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+              <h5 class="text-uppercase">Contact</h5>
+              <ul class="list-unstyled">
+                <li>
+                    <p><span class="fa fa-phone" aria-hidden="true"></span> 612-991-7118</p>
+                </li>
+                <li>
+                    <p><span class="fa fa-envelope" aria-hidden="true"></span> <a href="mailto:david.caye@cortactics.com"> David.Caye@cortactics.com </a></p>
+                </li>
+                <li style="font-size:40px">
+                    <a href="https://www.linkedin.com/in/david-caye-93053626/"><span class="fa fa-linkedin-square"></span></a>
+                    <a href="https://www.linkedin.com/in/david-caye-93053626/"><span class="fa fa-facebook-square"></span></a>
+                    <a href="https://www.linkedin.com/in/david-caye-93053626/"><span class="fa fa-twitter-square"></span></a>
+                    
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none pb-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-  
-          <!-- Links -->
-          <h5 class="text-uppercase">Quick Links</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">About us</a>
-            </li>
-            <li>
-              <a href="#!">Services</a>
-            </li>
-            <li>
-              <a href="#!">Testimonials</a>
-            </li>
-            <li>
-              <a href="#!">Contact</a>
-            </li>
-          </ul>
-  
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="#""> Anselsmolund.com</a>
         </div>
-        <div class="col-md-3 mb-md-0 mb-3">
-  
-          <!-- Links -->
-          <h5 class="text-uppercase">Services</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">CT Acquisition</a>
-            </li>
-            <li>
-              <a href="#!">3 Dimensional CT Sizing</a>
-            </li>
-            <li>
-              <a href="#!">Pediatric CT Acquisition</a>
-            </li>
-            <li>
-              <a href="#!">Guided Accreditation recommendations</a>
-            </li>
-          </ul>  
-        </div>
-        <div class="col-md-3 mt-md-0 mt-3">
-            <h3 id ="footer-contact">Contact</h3>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
-      <a href="#"> Anselsmolund.com</a>
-    </div>
     <div style="font-size: 5px;text-align: center">
-      Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+      Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
     </div>
-    </footer>      
+    </footer>   
+    <script>
+
+      function showDiv(divToShow){
+        console.log(document.getElementById(divToShow).style.display);
+        if(document.getElementById(divToShow).style.display == 'none'){
+          console.log("showing");
+          document.getElementById(divToShow).style.display = "block";
+          document.getElementById(divToShow+"_btn").innerHTML = "Show Less";
+        }
+        else if(document.getElementById(divToShow).style.display == "block"){
+          document.getElementById(divToShow).style.display = "none";
+          document.getElementById(divToShow+"_btn").innerHTML = "Show More";
+        }
+
+      }
+
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
