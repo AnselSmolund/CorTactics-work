@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -41,7 +46,7 @@
       </div>
     </nav>
     <div id = "navbar-hidden-div" style="height:100px"></div>
-    <div class="container" style="text-align: center; margin-top:40px; margin-bottom: 100px"> 
+    <div class="container" style="text-align: center; margin-top:20px; margin-bottom: 100px"> 
       <div class="row" style="text-align: center; margin-top:40px; margin-bottom: 20px">
         <div class="col">
           <h1 class="display-4" style="font-weight:600"> Services </h1>
@@ -175,7 +180,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id = "allergy">
         <div class="row" style="margin-bottom:50px">
           <div class="col-md-4">
             <img class="img-fluid"src="images/scans/cardiac 2.png"></img>
@@ -264,7 +269,7 @@
           </div>
         </div>
       </div>
-        <div class="container">
+        <div class="container" id="education">
           <div class="row" style="margin-bottom:50px">
             <div class="col-md-4">
               <img class="img-fluid"src="images/scans/cardiac 2.png"></img>
@@ -336,20 +341,20 @@
               <!-- Links -->
               <h5 class="text-uppercase">Services</h5>
       
-              <ul class="list-unstyled">
+              <ul class="list-unstyled"> 
                 <li>
-                  <a href="#!">CT Acquisition</a>
+                    <a href="services.html#ct_acq"> CT Acquisition </a>
                 </li>
                 <li>
-                  <a href="#!">3 Dimensional CT Sizing</a>
+                    <a href="services.html#3D_sizing"> 3 Dimensional CT Sizing </a>
                 </li>
                 <li>
-                  <a href="#!">Pediatric CT Acquisition</a>
+                    <a href="services.html#allergy"> Nursing and Patient Protocols Contrast Allergy Prep </a>
                 </li>
                 <li>
-                  <a href="#!">Guided Accreditation recommendations</a>
+                    <a href="services.html#education"> Patient Education and Positioning </a>
                 </li>
-              </ul>  
+              </ul> 
             </div>
             <div class="col-md-3 mb-md-0 mb-3">
               <h5 class="text-uppercase">Contact</h5>
@@ -377,26 +382,8 @@
       Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
     </div>
     </footer>   
-    <script>
-
-      function showDiv(divToShow){
-        console.log(document.getElementById(divToShow).style.display);
-        if(document.getElementById(divToShow).style.display == 'none'){
-          console.log("showing");
-          document.getElementById(divToShow).style.display = "block";
-          document.getElementById(divToShow+"_btn").innerHTML = "Show Less";
-        }
-        else if(document.getElementById(divToShow).style.display == "block"){
-          document.getElementById(divToShow).style.display = "none";
-          document.getElementById(divToShow+"_btn").innerHTML = "Show More";
-        }
-
-      }
-
-    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>

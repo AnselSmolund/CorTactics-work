@@ -2,6 +2,37 @@ html, body{
   max-width:100%;
   overflow-x:hidden;
 }
+/* NAV-BAR */
+
+#navbrand:hover{
+  border-bottom: none;
+}
+.navbar-brand{
+  padding:0;
+}
+.navbar{
+  animation: slideInFromTop .5s ease-in-out;
+  transition: .5s;
+  background-color :#545454 !important;
+  font-weight: 400;
+  position: fixed;
+  width:100vw;
+  z-index: 100;
+}
+.navbar a{
+  color: white !important; 
+}
+.navbar li{
+  padding: 10px;
+}
+.navbar a:hover{
+  /* border-bottom: solid 1px #ff3838; */
+  color:black !important;
+}
+
+/* INDEX PAGE */
+
+
 #main-cover{
   text-align: center;
   height: 100vh;
@@ -16,23 +47,17 @@ html, body{
 #corTactics{
   transition:1s;
 }
-#navbrand:hover{
- border-bottom: none;
-}
-.navbar-brand{
-  padding:0;
-}
+
 .main-container{
   background:rgba(255,255,255,1);
   padding-bottom:20px;
 }
-#service-icons img{
-  width:50%;
-}
+
 #title-header{
   color:white;
+  transition: .3s ease-in-out;
   text-align: center;
-  background:rgba(22, 22, 22, 0.5);
+  background:rgba(22, 22, 22, 1);
   padding: 50px;
   margin-top:10%;
   height:50%;
@@ -121,21 +146,52 @@ html, body{
 }
 video#bgVideo {
   position: absolute;
-  z-index: 0;
-  background: url("images/TR-Valve\ case\ GIR.mp4") no-repeat;
-  background-size: 80% 100%;
-  top: 50px;
-  left: 0px; /* fixed to left. Replace it by right if you want.*/
-  min-width: 80%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  transform: scale(1.2);
   position: fixed;
   z-index: -1;
+ 
 }
 
-#services-container .container{
-  border:1px solid #454545; 
+/* End Index Page */ 
+
+
+
+
+
+/* ABOUT PAGE */
+
+
+
+/* End ABOUT PAGE */
+
+
+
+
+
+/* Testimonial Page */ 
+
+
+
+/* End Testimonial Page */ 
+
+
+
+/* Services Page */ 
+#services-container {
+  margin-bottom:100px;
+}
+#service-icons img{
+  width:50%;
+}
+
+#services-container .container{ 
+  padding:20px; 
+  margin:20px auto;
+  background:#454545AF;
+  color:#fffff0;
+}
+
+#services-container .container:hover{ 
   padding:20px; 
   margin:20px auto;
   background:#454545AF;
@@ -153,6 +209,7 @@ video#bgVideo {
 }
 #services-container button{
   margin-bottom:20px;
+  border-radius: 0%;
 
 }
 #services-container .btn:hover{
@@ -165,90 +222,24 @@ video#bgVideo {
   box-shadow:none;
   
 }
-ul{
-  margin-left:15px;
-}
-footer ul{
-  margin-left:0px;
-}
-.navbar{
-  background-color :#545454 !important;
-  font-weight: 400;
-  position: fixed;
-  width:100vw;
-  z-index: 100;
-}
-
-.navbar a{
-  color: white !important; 
-
-
-}
-.navbar li{
-  padding: 10px;
-
-}
-
-#main-title{
-  margin-top: 30px !important;
-  color: white;
-
-}
-.navbar a:hover{
-  /* border-bottom: solid 1px #ff3838; */
-  color:black !important;
-}
-
-footer{
-  background:#545454;
-  color: white;
-  font-weight: 700;
-}
-footer a{
-  font-style: bold;
-  color:white;
-}
-
-footer a:hover{
-  color:#ff3838;
-}
-#footer-title{
-  border-bottom: 2px solid #ff3838;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
 
 #services-body strong{
   font-weight: 900;
 }
 
-body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-  line-height: 30px;
-
+#services-nav{
+  transition:.4s ease-in-out;
 }
-/*
-.container {
-  max-width: 400px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-} */
 
+/* End Services Page */ 
+
+
+
+
+
+
+
+/* Contact Page */ 
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -369,6 +360,73 @@ fieldset {
   color: #888;
 }
 
+/* End Contact Page */ 
+
+
+
+
+
+
+
+/* Footer */
+footer ul{
+  margin-left:0px;
+}
+footer{
+  background:#545454;
+  color: white;
+  font-weight: 700;
+}
+footer a{
+  font-style: bold;
+  color:white;
+}
+
+footer a:hover{
+  color:#ff3838;
+}
+#footer-title{
+  border-bottom: 2px solid #ff3838;
+}
+/* End Footer */ 
+
+
+
+
+
+/* Misc styling */
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 30px;
+
+}
+ul{
+  margin-left:15px;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* end Misc styling */ 
+
+
+
+
+
+/* Animations */
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -383,5 +441,13 @@ fieldset {
   }
   100% {
     transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
