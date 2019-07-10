@@ -10,16 +10,17 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="services-script.js"></script>
    
     <title>Services</title>
   </head>
   <body id ="services-body">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="services-nav" class="navbar navbar-expand-lg navbar-light bg-light" >
       <a id = "navbrand" class="navbar-brand" href="#"><img class ="rounded-circle" src = "images/main-logo-grey.jpg" width = "150"></img></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div style="background:rgba(0,0,0,0)" class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
@@ -46,9 +47,8 @@
           <h1 class="display-4" style="font-weight:600"> Services </h1>
           <p> Our founder, David Caye has been at CT Technologist for 27 years. Over that time he has 
             learned from the very best in the industry and has applied his expertise to departments 
-            all over the world. With CorTactics he wants to leverage his knowledge to boost your CT department,
-            educate your specialists so they can pass down information for years to come. He does this 
-            all by providing a curated suite of services that utilize only the most innovative techniques used today.
+            all over the world. With CorTactics he wants to leverage his knowledge to <strong>boost</strong> your CT department by
+            <strong>educating</strong> your technologists using a <strong>tailored </strong> suite of services, utilizing the most <strong>innovative</strong> techniques.
             </p>
         </div>
       </div>
@@ -70,6 +70,7 @@
           <img class="img-fluid" src="images/project-management.png"></img>
         </div>        
       </div>
+      
     </div>
     <div id ="services-container">
       <div id = "ct_acq" class="container">
@@ -105,12 +106,22 @@
         </div>
       </div>
     
-      <div class="container">
-        <div class="row" style="margin-bottom:50px">
+      <div class="container" id = "3D_sizing">
+        <div class="row"  style="margin-bottom:50px">
           <div class="col-md-4">
-            <img class="img-fluid" src="images/scans/cardiac 2.png"></img>
+            <div class="row">
+                <img class="img-fluid" src="images/3d-3.png"></img>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                  <img class="img" src="images/3d-1.png"></img>
+              </div>
+              <div class="col-md-6">
+                  <img src="images/3d-2.png"></img>
+              </div>
+            </div>
           </div>
-          <div class="col-md-8">
+          <div  class="col-lg-6" style="margin-left:70px">
             <h1> 3 Dimensional CT Sizing </h1>
             
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas, cumque libero obcaecati in harum! Cumque nostrum possimus alias laboriosam non distinctio, suscipit, nobis vero ab id excepturi similique autem.</p>
@@ -159,7 +170,8 @@
             </div>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid"src="images/scans/cardiac 2.png"></img>
+            <img class="img-fluid" src="images/enhance-2.jpg">
+            <img class="img-fluid" src="images/enhance-1.jpg">
           </div>
         </div>
       </div>
@@ -303,19 +315,18 @@
       
               <!-- Links -->
               <h5 class="text-uppercase">Quick Links</h5>
-      
               <ul class="list-unstyled">
                 <li>
-                  <a href="#!">About us</a>
+                  <a href="about.html">About us</a>
                 </li>
                 <li>
-                  <a href="#!">Services</a>
+                  <a href="services.html">Services</a>
                 </li>
                 <li>
-                  <a href="#!">Testimonials</a>
+                  <a href="testimonials.html">Testimonials</a>
                 </li>
                 <li>
-                  <a href="#!">Contact</a>
+                  <a href="contact.html">Contact</a>
                 </li>
               </ul>
       
@@ -350,17 +361,17 @@
                     <p><span class="fa fa-envelope" aria-hidden="true"></span> <a href="mailto:david.caye@cortactics.com"> David.Caye@cortactics.com </a></p>
                 </li>
                 <li style="font-size:40px">
-                    <a href="https://www.linkedin.com/in/david-caye-93053626/"><span class="fa fa-linkedin-square"></span></a>
-                    <a href="https://www.linkedin.com/in/david-caye-93053626/"><span class="fa fa-facebook-square"></span></a>
-                    <a href="https://www.linkedin.com/in/david-caye-93053626/"><span class="fa fa-twitter-square"></span></a>
-                    
+                  <a href="https://www.linkedin.com/in/david-caye-93053626/"><span class="fa fa-linkedin-square"></span></a>
+                  <a href="https://www.facebook.com/CorTactics/"><span class="fa fa-facebook-square"></span></a>
+                  <a href="https://twitter.com/DavidCaye2"><span class="fa fa-twitter-square"></span></a>                
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div class="footer-copyright text-center py-3">© 2019 Copyright:
-          <a href="#""> Anselsmolund.com</a>
+          <a href="https://anselsmolund.github.io/"">Ansel Smolund</a> <br>
+          <p style="font-size:13px"> Images provided by <a style="color:#14A1E8" href="https://www.circlecvi.com/">Circle Cardiovascular Imaging</a> and <a style="color:#14A1E8" href="https://www.vitalimages.com/">Vital Images</a></p>
         </div>
     <div style="font-size: 5px;text-align: center">
       Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
